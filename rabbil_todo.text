@@ -1,0 +1,18 @@
+1.Project structure
+2.controllers file function
+3.API end point define
+4.Payment System Utility function
+5.create model files
+  -categoriesModel
+  -brandsModel
+  -productsModel
+  -slidersModel
+  -reviewsModel
+  -cartsModel
+  -wishesModel
+  -usersModel
+  -profilesModel
+  -invoicesModel
+  -invoiceProductsModel
+
+6.understanding the Paymen getway system  
