@@ -45,10 +45,10 @@ router.post("/removeWish",wishListController.removeWish);
 
 //product
 router.get("/productListBySlider",productController.productListBySlider);
-router.get("/productListByCategory",productController.productListByCategory);
-router.get("/productListByRemark",productController.productListByRemark);
-router.get("/productListByBrand",productController.productListByBrand);
-router.get("/productDetailsId",productController.productDetailsId);
+router.get("/productListByCategory/:categoryId",productController.productListByCategory);
+router.get("/productListByRemark/:remark",productController.productListByRemark);
+router.get("/productListByBrand/:brandId",productController.productListByBrand);
+router.get("/productDetailsId/:productId",productController.productDetailsId);
 router.get("/productListByKeyword",productController.productListByKeyword);
 router.get("/productReviewListById",productController.productReviewListById);
 

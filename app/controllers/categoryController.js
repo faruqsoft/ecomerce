@@ -1,13 +1,10 @@
+import { categoryListServices  } from "../service/productServices.js";
+
 export const categoryList = async (req,res)=>{
 
-    try{
-      
-        return res.json({ status:"successs","message":""})
+
+        let result = await categoryListServices()
+        return res.json(result);
    
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
-
-}
+       
+    } 

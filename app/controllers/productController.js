@@ -1,73 +1,45 @@
-export const productListBySlider = async (req,res)=>{
-
-    try{
-      
-        return res.json({ status:"successs","message":""})
-   
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
-
-}
+import {sliderListServices } from "../service/productServices.js"
 
 
 export const productListByCategory = async (req,res)=>{
 
-    try{
-      
-        return res.json({ status:"successs","message":""})
-   
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
+     let result = await listByCategoryServices(req)
+     return res.json(result)
 
 }
 
 
 export const productListByRemark = async (req,res)=>{
 
-    try{
-      
-        return res.json({ status:"successs","message":""})
    
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
+     let result = await listByRemarkServices(req)
+     return res.json(result)
 
 }
 
   
 export const productListByBrand = async (req,res)=>{
 
-    try{
-      
-        return res.json({ status:"successs","message":""})
-   
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
+     let result = await listByBrandServices(req)
+     return res.json(result)
 
 }
 
+
+
+export const productListBySlider = async (req,res)=>{
+
+     let result = await sliderListServices()
+     return res.json(result)
+
+}
+
+
+
 export const productDetailsId = async (req,res)=>{
 
-    try{
-      
-        return res.json({ status:"successs","message":""})
-   
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
+     let result = await detailsServices(req)
+     return res.json(result)
 
 }
 
@@ -75,40 +47,15 @@ export const productDetailsId = async (req,res)=>{
 
 export const productListByKeyword = async (req,res)=>{
 
-    try{
-      
-        return res.json({ status:"successs","message":""})
-   
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
+     
 
 }
 export const productReviewListById = async (req,res)=>{
 
-    try{
       
-        return res.json({ status:"successs","message":""})
-   
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
 
 }
 export const createProductReview = async (req,res)=>{
 
-    try{
-      
-        return res.json({ status:"successs","message":""})
    
-    }
-    catch(e){
-
-        return res.json({status:"fail","message":e.toString()});
-    }   
-
 }
