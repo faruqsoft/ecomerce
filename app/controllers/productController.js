@@ -42,7 +42,7 @@ export const productListByRemark = async (req,res)=>{
 
 }
 
-
+  
 export const productListByBrand = async (req,res)=>{
 
     try{

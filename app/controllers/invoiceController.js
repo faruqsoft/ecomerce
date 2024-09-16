@@ -1,4 +1,4 @@
-export const createProductReview = async (req,res)=>{
+export const createInvoice = async (req,res)=>{
 
     try{
       

@@ -20,40 +20,43 @@ router.post("/login",usersController.login);
 router.post("/verifyLogin",usersController.verifyLogin);
 router.post("/createUserProfile",usersController.createUserProfile);
 router.post("/updateUserProfile",usersController.updateUserProfile);
-router.post("/readUserProfile",usersController.readUserProfile);
+router.get("/readUserProfile",usersController.readUserProfile);
 
 //brand
-router.post("/brandList",brandController.brandList);
+router.get("/brandList",brandController.brandList);
 
 //categories
-router.post("/categoryList",categoryController.categoryList);
+router.get("/categoryList",categoryController.categoryList);
 
 //cart
-router.post("/createCart",cartListController.createCart);
-router.post("/readCartList",cartListController.readCartList);
+router.post("/createCart  ",cartListController.createCart);
+router.get("/readCartList",cartListController.readCartList);
 router.post("/updateCart",cartListController.updateCart);
 router.post("/removeCart",cartListController.removeCart);
 
-//wish
-router.post("/createWish",wishListController.createWish);
-router.post("/readWish",wishListController.readWish);
-router.post("/removeWish",wishListController.removeWish);
-
-//product
-router.post("/productListBySlider",productController.productListBySlider);
-router.post("/productListByCategory",productController.productListByCategory);
-router.post("/productListByRemark",productController.productListByRemark);
-router.post("/productListByBrand",productController.productListByBrand);
-router.post("/productDetailsId",productController.productDetailsId);
-router.post("/productListByKeyword",productController.productListByKeyword);
-router.post("/productReviewListById",productController.productReviewListById);
+//Review
 router.post("/createProductReview",productController.createProductReview);
 
 
+//wish
+router.post("/createWish",wishListController.createWish);
+router.get("/readWish",wishListController.readWish);
+router.post("/removeWish",wishListController.removeWish);
+
+//product
+router.get("/productListBySlider",productController.productListBySlider);
+router.get("/productListByCategory",productController.productListByCategory);
+router.get("/productListByRemark",productController.productListByRemark);
+router.get("/productListByBrand",productController.productListByBrand);
+router.get("/productDetailsId",productController.productDetailsId);
+router.get("/productListByKeyword",productController.productListByKeyword);
+router.get("/productReviewListById",productController.productReviewListById);
+
+
 //invoice
-router.post("/createProductReview",invoiceController.createProductReview);
-router.post("/readInvoiceList",invoiceController.readInvoiceList);
-router.post("/readInvoiceDetails",invoiceController.readInvoiceDetails);
+router.post("/createInvoice",invoiceController.createInvoice);
+router.get("/readInvoiceList",invoiceController.readInvoiceList);
+router.get("/readInvoiceDetails",invoiceController.readInvoiceDetails);
 
 
 
